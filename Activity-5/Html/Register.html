@@ -82,7 +82,7 @@
             </ul>
 
             <label for="country">Country</label><br />
-              <select name="country" id="country">
+              <select name="country" id="country" onchange="onc()">
               <option value="ethiopia" selected>Ethiopia</option>
               <option value="kenya">South Africa</option>
               <option value="somalia">Kenya</option>
@@ -92,7 +92,7 @@
             </select>
                             <br />
                             <label for="photo">Photo</label><br />
-                            <input type="file" id="photo" name="photo" accept="image/png, image/jpeg" /><br />
+                            <input type="file" id="photo" name="photo" accept="image/png, image/jpeg" onchange="onc1()" /><br />
                             Describe yourself<br />
                             <textarea id="des" rows="8" cols="50%" placeholder="Say Something" onfocus=" document.getElementById('des').style.background='rgb(219, 143, 105)'" onblur=" document.getElementById('des').style.background='rgb(255, 255, 255)'"></textarea
             ><br />
@@ -189,6 +189,16 @@ var count = 0;
 }
 
  */ 
+      function onc()
+{
+  document.getElementById("country").style.background ="green";
+}
+
+function onc1()
+{
+  document.getElementById("photo").style.background ="green";
+
+}
 </script>
 
   </body>
