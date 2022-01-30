@@ -7,7 +7,7 @@ function ikey()
 
 function sub()
 {
-    var name = 
+    
     
     window.alert("successfully submitted");
    

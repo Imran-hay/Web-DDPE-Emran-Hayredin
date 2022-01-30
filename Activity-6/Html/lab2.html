@@ -2,6 +2,23 @@
 <html>
 
 <head>
+    <style>
+        .button{
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 15px 25px;
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            border-radius: 12px;
+        }
+        .button:hover{
+            background-color: brown;
+            
+            transition-duration: 0.5s;
+        }
+
+    </style>
     <script src="../JS/lab2.js"></script>
 
 <title>Life hacks</title>
@@ -139,19 +156,28 @@ Here is how <a href="Wikipedia">wikipedia</a> put it... <a href="read">read</a>
 
 <h3>new podcast</h3>
 <h1>Jack Ma - How I Overcame Failure</h1>
-<div>
+<div id="ap">
 <audio controls id="aud" onplay="onp()" onpause="onpa()"  onseeking="ose()" onended="one()">
 <source src="..\..\Resource\audio\Jack Ma - How I Overcame Failure.mp3">
 type="audio/mp3"
 </audio>
+<br><br>
+<button onclick="removeaudio()" class="button">remove</button>
 </div>
 
 
 <hr>
 <h2>pick of the week</h2>
 <h1>24 hours a day</h1>
+<div id="vp">
+    <video id="vid" width="600px" height="340px" controls src="..\..\Resource\video\24_HOURS.mp4" onpause="vonpa()" onplay="vonp()"  onseeking="vose()">video</video>
+    <br><br><br>
+   <div><button id="swap" onclick="swap()" class="button">Swap</button></div>
+   <br><br>
+   <div><button id="" onclick="add()" class="button">add</button></div>
 
-<video id="vid" width="600px" height="340px" controls src="..\..\Resource\video\24_HOURS.mp4" onpause="vonpa()" onplay="vonp()"  onseeking="vose()">video</video>
+</div>
+
 
 
 
