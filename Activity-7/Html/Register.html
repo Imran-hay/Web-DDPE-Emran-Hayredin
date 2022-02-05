@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+
+<head>
+  <script src="../JS/register.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+</head>
+
+<body style="background-color: aqua;">
+    <table align="center">
+        <tr>
+            <td width="900px">
+                <img src="../../Resource/images/logo_gold.png" width="50px" />
+            </td>
+
+            <td>
+                <p align="right">
+                    <a href="">Podcasts</a>| <a href="">Articles</a>|
+                    <a href="">Ideas</a>| <a href="">About Us</a>|
+                    <a href="">Contact Us</a>|<a href="register.html">Register</a>|
+                    <a href="sign-in.html" target="_blank">Sign-in</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <table align="center">
+        <tr>
+            <td width="1000px" valign="top">
+                <h2>Sign In</h2>
+                <p>Sign in to get full access.</p>
+                <form action="output.html">
+                    <label for="fullname">Full Name</label><br />
+                    <input type="text" id="fname"  required maxlength="50" size="50%" id="fname" onkeypress="ikey()" onfocus=" document.getElementById('fname').style.background='rgb(219, 143, 105)'" onblur=" document.getElementById('fname').style.background='rgb(255, 255, 255)'" /><br>
+
+                    <label for="phone">Phone</label><br>
+                    <input type="tel" id="tel" size="50%" required id="tel" onfocus=" document.getElementById('tel').style.background='rgb(219, 143, 105)'" onblur=" document.getElementById('tel').style.background='rgb(255, 255, 255)'" /><br>
+
+                    <label for="age">Age</label><br>
+                    <input type="number" id="age" min="8" max="100"id="age" onfocus=" document.getElementById('age').style.background='rgb(219, 143, 105)'" onblur=" document.getElementById('age').style.background='rgb(255, 255, 255)'" /><br>
+
+                    <label for="color">Your Favorite Color</label><br>
+                    <input type="color" id="color" /><br>
+
+                    <label for="birthdate">Birthdate</label><br>
+                    <input type="date" id="dob" onfocus=" document.getElementById('dob').style.background='rgb(219, 143, 105)'" onblur=" document.getElementById('dob').style.background='rgb(255, 255, 255)'"/><br>
+
+                    Gender<br />
+                    Female<input type="radio" name="gender" />
+                    Male<input type="radio" name="gender" />
+                       <br>
+
+            <label for="password">Password</label><br />
+                    <input type="password" name="password" id="password" value="" minlength="6" maxlength="32" size="50%" required onkeypress="pclick()"onfocus=" document.getElementById('password').style.background='rgb(219, 143, 105)'" onblur=" document.getElementById('password').style.background='rgb(255, 255, 255)'"  /> <span id="demo"></span><br />
+                    <label for=" password ">Confirm Password</label><br />
+                    <input type="password " id="password2 " minlength="6 " maxlength="32 " size="50%" required onkeypress="pclick()" onfocus=" document.getElementById('password2').style.background='rgb(219, 143, 105)'" onblur=" document.getElementById('password2').style.background='rgb(255, 255, 255)'"/><br />
+
+                    <label for="skills">Skills</label><br />
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="html" /><label for="html">HTML</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="css" /><label for="CSS"
+                  >CSS</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="js" /><label for="JavaScript"
+                  >JavaScript</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="php" /><label for="php"
+                  >PHP</label
+                >
+              </li>
+            </ul>
+
+            <label for="country">Country</label><br />
+              <select name="country" id="country" onchange="onc()">
+              <option value="ethiopia" selected>Ethiopia</option>
+              <option value="kenya">South Africa</option>
+              <option value="somalia">Kenya</option>
+              <option value="djibouti">Zimbabwe</option>
+              <option value="sudan">Sudan</option>
+              <option value="eritrea">Ghana</option>
+            </select>
+                            <br />
+                            <label for="photo">Photo</label><br />
+                            <input type="file" id="photo" name="photo" accept="image/png, image/jpeg" onchange="onc1()" /><br />
+                            Describe yourself<br />
+                            <textarea id="des" rows="8" cols="50%" placeholder="Say Something" onfocus=" document.getElementById('des').style.background='rgb(219, 143, 105)'" onblur=" document.getElementById('des').style.background='rgb(255, 255, 255)'"></textarea
+            ><br />
+            
+            <!--<input type="Reset" />-->
+            <button id="bt1"  style="background-color: darkolivegreen;" onclick="validate()" onsubmit="">Submit</button>
+          </form>
+
+        </td>
+        <td valign="top" width="405px">
+          <h2>Recent Posts</h2>
+          <ul>
+            <li><b>Articles</b></li>
+            <ul>
+              <li>
+                The Importance of Goals, Especially During Difficult Times
+              </li>
+              <li>5 Steps to Discovering Your Life Purpose in 2021!</li>
+            </ul>
+            <li>Ideas</li>
+            <ul>
+              <li>10 Books to Read in The Fall</li>
+              <li>Top Web Development Projects Ideas</li>
+            </ul>
+          </ul>
+          <h2>Most Viewed Articles</h2>
+          <ol type="I">
+            <li>
+              Instant Gratification Is Stopping You From REaching Your Goals.
+            </li>
+            <li>Stop Juggling Between Work And Life</li>
+          </ol>
+          <h2>IP Project Winners</h2>
+          <pre>
+----------------------------------
+Rank    Award
+----------------------------------
+First   Free hosting and support
+Second  5GB Mobile Data
+Third   1GB Mobile Data
+----------------------------------
+                </pre
+          >
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <hr />
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <p>
+            Follow Us On: <a href="">Facebook</a>|
+            <a href="">Twitter</a>
+          </p>
+        </td>
+        <td align="right">
+          <a href="">Privacy</a>|
+          <a href="">Terms of Use</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          Copyright © AASTU SEng 2021, All Rights Reserved
+        </td>
+      </tr>
+    </table>
+
+
+
+    <script>
+      /*var password = document.getElementById("password").value;
+var count = 0;
+
+    function pclick()
+{
+  
+   const pattern = /[@#%&]/;
+  
+   
+   
+     
+   
+   if(pattern.test(password))
+   {
+     document.getElementById("password").style.background="green";
+   }
+   else if(pattern.test(password)== false)
+   {
+    document.getElementById("password").style.background="red";
+
+   }
+  
+
+}
+
+ */ 
+
+function onc()
+      function onc()
+{
+  document.getElementById("country").style.background ="green";
+}
+
+function onc1()
+{
+  document.getElementById("photo").style.background ="green";
+
+}
+</script>
+
+  </body>
+</html>
